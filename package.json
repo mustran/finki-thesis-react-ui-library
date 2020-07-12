@@ -1,0 +1,9 @@
+{
+  "name": "finki-ui-library",
+  "version": "1.0.0",
+  "description": "Small and fast UI library for building web applications faster",
+  "main": "index.js",
+  "repository": "https://github.com/mustran/finki-thesis-react-ui-library.git",
+  "author": "Musli Ademi",
+  "license": "MIT"
+}
