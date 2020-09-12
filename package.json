@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/mustran/finki-thesis-react-ui-library/issues"
   },
-  "homepage": "https://github.com/mustran/finki-thesis-react-ui-library",
+  "homepage": "https://github.com/mustran/finki-thesis-react-ui-library#readme",
   "scripts": {
     "start": "yarn run storybook",
     "storybook": "start-storybook -p 3001",
