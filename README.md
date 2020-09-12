@@ -54,9 +54,7 @@ function App() {
 ReactDOM.render(<App />, document.querySelector('#app'));
 ```
 
-Yes, it's really all you need to get started as you can see in this live and interactive demo:
-
-[![Edit Button](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/k5qqq2797)
+Yes, it's really all you need to get started.
 
 ### Modifiers
 
@@ -66,13 +64,6 @@ modifiers. Modifiers are small functions that allow us to alter the properties o
 They primarily live in the Element's file and are solely responsible for modifying styles.
 Some modifiers are common to multiple Elements. An example would be `fontWeights`.
 These common modifiers live in `src/modifiers`
-
-## Local Development
-
-### Module Development Workflow
-
-Helpful information on development workflow in this library lives
-[here](https://gist.github.com/srdjanRakic/139502483b17c3d2d7675d5592ff8d48).
 
 ### Linting
 
