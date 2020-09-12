@@ -1,7 +1,7 @@
 {
   "name": "finki-ui",
   "sideEffects": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Musli Ademi",
   "description": "Small and yet fast React UI library for building web applications easier and faster",
   "main": "dist/finki-ui.cjs.js",
