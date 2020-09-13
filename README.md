@@ -137,7 +137,7 @@ Licensed under the MIT License, Copyright © 2020-present Musli Ademi.
 
 See [LICENSE](https://github.com/mustran/finki-thesis-react-ui-library/blob/master/LICENCE) for more information.
 
-[version-badge]: https://img.shields.io/badge/npm-v1.0.0-blue
+[version-badge]: https://img.shields.io/badge/npm-v1.0.3-blue
 [package]: https://www.npmjs.com/package/finki-ui
 [license-badge]: https://img.shields.io/badge/licence-MIT-green
 [license]: https://github.com/mustran/finki-thesis-react-ui-library/blob/master/LICENCE
