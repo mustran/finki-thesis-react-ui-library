@@ -18,6 +18,9 @@ const StyledImage = styled.img`
 `;
 
 type Props = {
+  /**
+   * Image url provided
+   */
   imageUrl?: string;
 };
 

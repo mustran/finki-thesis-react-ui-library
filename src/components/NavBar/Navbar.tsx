@@ -12,7 +12,13 @@ type Props = {
    * Navbar logo
    */
   logo?: string;
+  /**
+   * Function called when logo is clicked
+   */
   onLogoClick?: () => any;
+  /**
+   * Logo title
+   */
   logoTitle?: string;
 };
 

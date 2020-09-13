@@ -12,12 +12,33 @@ type DefaultOption = {
 };
 
 type Props = SelectHTMLAttributes<HTMLSelectElement> & {
+  /**
+   * Dropdown modifiers
+   */
   modifiers?: Array<string>;
+  /**
+   * Dropdown value
+   */
   value: string;
+  /**
+   * Function called when the dropdown value changes
+   */
   onChange?: (value: string) => void;
+  /**
+   * Dropdown color
+   */
   color?: string;
+  /**
+   * Array of `Option` objects
+   */
   options: Array<Option>;
+  /**
+   * Whether the dropdown is disabled or not
+   */
   disabled?: boolean;
+  /**
+   * Default dropdown option
+   */
   defaultOption?: DefaultOption;
   className?: string;
 };

@@ -1,4 +1,3 @@
-// @flow
 import React from 'react';
 import flatMap from 'lodash-es/flatMap';
 import range from 'lodash-es/range';

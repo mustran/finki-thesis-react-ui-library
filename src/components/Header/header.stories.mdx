@@ -25,39 +25,41 @@ const Page = () => (
     {() => {
         const [tabSelected, setTabSelected] = useState(0);
         return (
-            <div style={{height: '250px', width: '90%'}}>
+            <div style={{height: '310px', width: '930px'}}>
                 <Header
-                title="My app title"
+                title="Courses"
                 userMenuProps={{
-                    menuTitle: 'User name',
+                    menuTitle: 'Musli Ademi 151540',
                     image: 'https://www.impaact4tb.org/wp-content/uploads/2018/07/Generic-male-icon.png',
                     menuItems: [
-                    { title: 'Hello', onClick: console.log },
-                    { title: 'World', href: 'http://www.example.com' },
+                    { title: 'Profile', onClick: console.log },
+                    { title: 'Grades', onClick: console.log },
+                    { title: 'Messages', onClick: console.log },
+                    { title: 'Preferences', href: 'http://www.example.com' },
                     ],
                     actionItem: { title: 'Logout' },
                 }}
                 additionalUserMenuProps={{
-                    menuTitle: 'Added menu',
+                    menuTitle: 'Semester',
                     image:
                     'https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png',
                     menuItems: [
-                    { title: 'Agent1', onClick: console.log },
-                    { title: 'Agent2', href: 'http://www.example.com' },
+                    { title: 'Course 1', href: 'https://courses.finki.ukim.mk/course/view.php?id=1503' },
+                    { title: 'Course 2', href: 'https://courses.finki.ukim.mk/course/view.php?id=1518' },
                     ],
                     actionItem: {
                     title: 'See more on this link',
-                    href: 'http://www.example.com',
+                    href: 'https://courses.finki.ukim.mk/',
                     smallSize: true,
                     },
                 }}
                 tabNavigationProps={{
                     tabs: [
                     {
-                        title: 'Hello',
+                        title: 'Home',
                     },
                     {
-                        title: 'Tabs',
+                        title: 'Announcments',
                     },
                     ],
                     selectedTabIndex: tabSelected,

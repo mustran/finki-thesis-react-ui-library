@@ -2,6 +2,9 @@ import React, { ChangeEvent, InputHTMLAttributes } from 'react';
 import { StyledLabel, Root, Input, Fill } from './RadioWrapper';
 
 type RadioProps = InputHTMLAttributes<HTMLInputElement> & {
+  /**
+   * Radio label
+   */
   label: string;
   id: string;
   name?: string;

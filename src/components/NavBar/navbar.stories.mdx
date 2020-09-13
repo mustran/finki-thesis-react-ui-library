@@ -29,26 +29,26 @@ const Page = () => (
 ### Navbar example
 <Preview withSource="open">
   <Story name="navbar">
-    <div>
+    <div style={{height: '600px'}}>
         <Navbar logo="https://www.finki.ukim.mk/Content/dataImages/downloads/logo-large-500x500_2.png">
             <Navbar.MenuItem
             icon={<IoMdAnalytics size="192x192" />}
-            onClick={() => console.log('Analytics clicked')}
+            onClick={() => console.log('iKnow clicked')}
             active
             >
-            Analytics
+            iKnow
             </Navbar.MenuItem>
             <Navbar.MenuItem
             icon={<MdPhotoLibrary size="192x192" />}
-            onClick={() => console.log('Assets clicked')}
+            onClick={() => console.log('Archive clicked')}
             >
-            Assets
+            Archive
             </Navbar.MenuItem>
             <Navbar.MenuItem
             icon={<MdPeople size="192x192" />}
-            onClick={() => console.log('Audience clicked')}
+            onClick={() => console.log('Students clicked')}
             >
-            Audience
+            Students
             </Navbar.MenuItem>
         </Navbar>
     </div>

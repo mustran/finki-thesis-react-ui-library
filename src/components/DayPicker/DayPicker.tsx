@@ -47,6 +47,9 @@ type Props = {
    */
   date: Moment | string | null;
   // input related props
+  /**
+   * Whether the selected date is outside of range or not
+   */
   isOutsideRange?: (day: number) => any;
   /**
    * Number of months to show
@@ -60,7 +63,13 @@ type Props = {
    * Overwrite the default 'Date' placeholder
    */
   placeholder?: string;
+  /**
+   * Function called when the day picker is closed
+   */
   onClose?: () => any;
+  /**
+   * Whether to disable past days or not
+   */
   disablePastDays?: boolean;
 };
 

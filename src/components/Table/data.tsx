@@ -1,45 +1,44 @@
 import React from 'react';
-import { FaMusic, FaCode } from 'react-icons/fa';
+import { FaCode } from 'react-icons/fa';
 
 export const columns = [
   {
-    title: 'ID',
+    title: 'Student ID',
     key: 'id',
+  },
+  {
+    title: 'Student Name',
+    key: 'name',
+  },
+  {
+    title: 'Date Enrolled',
+    key: 'dateEnrolled',
   },
   {
     title: '',
     key: 'icon',
-    render: () => <FaMusic />,
   },
   {
-    title: 'Name',
-    key: 'name',
-  },
-  {
-    title: 'Date Created',
-    key: 'dateCreated',
-  },
-  {
-    title: 'Director',
-    key: 'director',
-    render: ({ value, rowValues }: any) => `${value} - ${rowValues.dateCreated}`,
+    title: 'Course',
+    key: 'course',
+    render: ({ value }: any) => `${value}`,
   },
 ];
 
 export const data = [
   {
     id: 2,
-    icon: <FaMusic />,
-    name: "Won't You Be My Neighbour?",
-    director: 'Morgan Neville',
-    dateCreated: '2018/07/24',
+    name: 'Musli Ademi',
+    course: 'Web Design',
+    dateEnrolled: '2020/07/24',
+    icon: <FaCode />,
   },
   {
     id: 8,
+    name: 'Ivan Kitanovski',
+    course: 'Advanced JavaScript',
+    dateEnrolled: '2020/07/21',
     icon: <FaCode />,
-    name: 'Soundtrack: No Country',
-    director: 'Coen Brothers',
-    dateCreated: '2018/07/21',
   },
 ];
 

@@ -7,6 +7,9 @@ import { columns, data } from './data.tsx'
 
 <Meta title="Table" component={<Table/>} />
 
+# Table
+
+Table component is used when we have a lot of data to display in formatted order. It also can be used with pagination
 
 ```jsx
 import { Table } from 'finki-ui';
@@ -15,8 +18,31 @@ const Page = () => (
 )
 ```
 
+### Props
+<Props of={Table} />
+
 <Preview withSource="open">
   <Story name="default">
+    <>
+    <Table
+            columns={columns}
+            data={data}
+            options={{
+                rowSelection: {
+                    active: true,
+                    action: (data) => console.log(data),
+                },
+                rowActions: [
+                    { icon: <MdDelete />, onClick: (id) => console.log(id), render: () => ( <MdDelete />)}
+                ],
+            }}
+        />
+      </>
+  </Story>
+</Preview>
+
+<Preview withSource="open">
+  <Story name="with pagination">
     <>
     <Table
             columns={columns}

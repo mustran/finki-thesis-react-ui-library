@@ -3,18 +3,36 @@ import Tab from './Tab';
 import TabsWrapper from './TabsWrapper';
 
 interface TabInfo {
+  /**
+   * Tab name
+   */
   name: string;
 }
 
 interface ContentProps extends TabInfo {
+  /**
+   * Tab icon
+   */
   icon?: ReactElement | null;
+  /**
+   * Tab icon position
+   */
   iconPosition?: string;
 }
 
 type TabsProps = HTMLAttributes<HTMLDivElement> &
   ContentProps & {
+    /**
+     * Array of TabInfo
+     */
     tabs: Array<TabInfo>;
+    /**
+     * Index of the selected tab
+     */
     selectedTabIndex: number;
+    /**
+     * Function which runs when the tab index changes
+     */
     onTabClick: (index: number) => void;
   };
 

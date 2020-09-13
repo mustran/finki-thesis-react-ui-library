@@ -3,12 +3,33 @@ import Label from '../Label';
 import CheckboxWrapper from './CheckboxWrapper';
 
 type Props = {
+  /**
+   * Checkbox label
+   */
   label: string;
+  /**
+   * ID
+   */
   id: string;
+  /**
+   * Checkbox name attribute
+   */
   name?: string;
+  /**
+   * Whether the checkbox is checked or not
+   */
   checked: boolean;
+  /**
+   * Function called when the checkbox changes its state
+   */
   onChange: (checked: boolean) => any;
+  /**
+   * Checkbox container ref
+   */
   containerRef?: RefObject<HTMLDivElement> | null;
+  /**
+   * Whether the checkbox is disabled or not
+   */
   disabled?: boolean;
 };
 

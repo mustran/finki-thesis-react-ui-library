@@ -53,19 +53,46 @@ type TableOptions<T> = {
 
 // eslint-disable-next-line @typescript-eslint/no-use-before-define
 type Props<T = Data> = {
+  /**
+   * Table columns
+   */
   columns: Array<Column> | any;
+  /**
+   * Table data
+   */
   data: Array<any>;
+  /**
+   * External CSS class
+   */
   className?: string;
+  /**
+   * Css styles
+   */
   style?: CSSProperties;
+  /**
+   * Table options
+   */
   options: TableOptions<T>;
+  /**
+   * Whether to show loader when data is loaded or not
+   */
   showLoader?: boolean;
+  /**
+   * Whether to show empty table or not
+   */
   renderEmptyTable?: boolean;
+  /**
+   * Table button
+   */
   tableButton?: {
     label: string;
     icon?: string | Node;
     onClick: (e: SyntheticEvent) => any;
     type: string;
   };
+  /**
+   * Actions to take when icon is clicked
+   */
   actionsRowTitle?: string;
 };
 

@@ -5,17 +5,35 @@ import ButtonWrapper from './ButtonWrapper';
 export type Size = 'xs' | 'sm' | 'md' | 'lg';
 
 type ContentProps = {
+  /**
+   * Button element
+   */
   icon?: ReactElement | null;
+  /**
+   * Position of the icon
+   */
   iconPosition?: string;
   children?: any;
 };
 
 export type Props = ButtonHTMLAttributes<HTMLButtonElement> &
   ContentProps & {
+    /**
+     * Button modifier type
+     */
     buttonModifiers?: Array<string>;
+    /**
+     * Button size
+     */
     size?: Size;
     className?: string;
+    /**
+     * WHether the button is full width or not
+     */
     fullWidth?: boolean;
+    /**
+     * WHether the button is full width or not
+     */
     fullHeight?: boolean;
   };
 

@@ -76,13 +76,37 @@ const InputWrapper = styled.div`
 `;
 
 type Props = {
+  /**
+   * Input type
+   */
   type: string;
+  /**
+   * Placeholder of the input
+   */
   placeholder: string;
+  /**
+   * Input ID
+   */
   id: string;
+  /**
+   * Function called when the value of the input changes
+   */
   onChange: (e: ChangeEvent<HTMLInputElement>) => any;
+  /**
+   * Value of the input
+   */
   value: string | Array<string> | number;
+  /**
+   * Input size
+   */
   sizeProp?: Size;
+  /**
+   * Input icon
+   */
   icon?: ReactNode;
+  /**
+   * External CSS class
+   */
   className?: string;
 };
 

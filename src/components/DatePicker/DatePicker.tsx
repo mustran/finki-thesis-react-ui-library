@@ -88,15 +88,30 @@ type Props = {
    * Function which takes a boolean argument on whether it is focused or not
    */
   onFocusChange(focused: FocusedInputShape | null): void;
+  /**
+   * Which presets to display
+   */
   displayPresets?: Array<string>;
+  /**
+   * Start date ID
+   */
   startDateId?: string;
+  /**
+   * End date ID
+   */
   endDateId?: string;
   /**
    * Function which specifies the days that are not allowed to be choosed
    * (ex. isOutsideRange={day => day.isBefore(moment())})
    */
   isOutsideRange?: (day: any) => boolean;
+  /**
+   * Minimum date range selected
+   */
   minimumNights?: number;
+  /**
+   * Active perdiod preset
+   */
   activePeriodPreset?: string;
   /**
    * Boolean indicating whether to show presets on the left or not

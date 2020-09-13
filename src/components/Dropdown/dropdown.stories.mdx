@@ -22,6 +22,8 @@ const Page = () => (
 )
 ```
 
+### Props
+<Props of={Dropdown} />
 
 ### Standard dropdown
 <Preview withSource="open">
@@ -36,7 +38,7 @@ const Page = () => (
     return (
         <DropdownWrapperDocs>
             <p>Selected option: {value}</p>
-            <Dropdown onChange={(e) => setValue(e.target.value)} options={options} value={value} />
+            <Dropdown onChange={(val) => setValue(val)} options={options} value={value} />
         </DropdownWrapperDocs>
     )
   }}
@@ -51,12 +53,12 @@ const Page = () => (
         { value: 'Option 1', displayName: 'Option 1' },
         { value: 'Option 2', displayName: 'Option 2' },
     ];
-    const [value, setValue] = useState(options[0].value);
-    const defaultOption = { displayName: 'default value', disabled: true };
+    const defaultOption = { displayName: 'default', disabled: true };
+    const [value, setValue] = useState(defaultOption.displayName);
     return (
         <DropdownWrapperDocs>
             <p>Selected option: {value}</p>
-            <Dropdown onChange={(e) => setValue(e.target.value)} defaultOption={defaultOption} options={options} value={value} />
+            <Dropdown onChange={(val) => setValue(val)} defaultOption={defaultOption} options={options} value={value} />
         </DropdownWrapperDocs>
     )
   }}
@@ -78,7 +80,7 @@ const Page = () => (
             <Dropdown
                 options={options}
                 value={value}
-                onChange={(e) => setValue(e.target.value)}
+                onChange={(val) => setValue(val)}
                 color="#936"
             />
         </DropdownWrapperDocs>
@@ -101,7 +103,7 @@ const Page = () => (
             <Dropdown
                 options={options}
                 value={value}
-                onChange={(e) => setValue(e.target.value)}
+                onChange={(val) => setValue(val)}
                 disabled
             />
         </DropdownWrapperDocs>
